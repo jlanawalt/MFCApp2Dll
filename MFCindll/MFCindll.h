@@ -24,6 +24,7 @@ class CMFCindllApp : public CWinApp
 {
 public:
 	CMFCindllApp();
+	bool m_bReady;
 
 // Overrides
 public:
