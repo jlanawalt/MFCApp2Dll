@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCindll", "MFCindll\MFCindll.vcxproj", "{4B4DA385-9FA0-482B-8943-5B734B40AF5E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win32Caller", "Win32Caller\Win32Caller.vcxproj", "{5ADF0A90-5D71-4215-A798-380A041307C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{4B4DA385-9FA0-482B-8943-5B734B40AF5E}.Debug|Win32.Build.0 = Debug|Win32
 		{4B4DA385-9FA0-482B-8943-5B734B40AF5E}.Release|Win32.ActiveCfg = Release|Win32
 		{4B4DA385-9FA0-482B-8943-5B734B40AF5E}.Release|Win32.Build.0 = Release|Win32
+		{5ADF0A90-5D71-4215-A798-380A041307C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5ADF0A90-5D71-4215-A798-380A041307C0}.Debug|Win32.Build.0 = Debug|Win32
+		{5ADF0A90-5D71-4215-A798-380A041307C0}.Release|Win32.ActiveCfg = Release|Win32
+		{5ADF0A90-5D71-4215-A798-380A041307C0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
