@@ -94,6 +94,11 @@
   <ItemGroup>
     <ResourceCompile Include="Win32Caller.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MFCindll\MFCindll.vcxproj">
+      <Project>{4b4da385-9fa0-482b-8943-5b734b40af5e}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
