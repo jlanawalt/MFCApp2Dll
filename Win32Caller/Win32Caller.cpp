@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Win32Caller.h"
+#include "../MFCindll/MFCindll.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -32,7 +33,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 		}
 		else
 		{
-			// TODO: code your application's behavior here.
+			CMFCindllApp* cmyapp=RunMainframe();
 		}
 	}
 	else
