@@ -11,14 +11,12 @@
 #endif
 
 // Export MFC application from DLL
-CMFCindllApp* RunMainframe()
+void RunMainframe()
 {
 	AFX_MANAGE_STATE(AfxGetStaticModuleState()) ;
-	CMFCindllApp* myapp=new CMFCindllApp();
-	myapp->m_bReady = true;
-	myapp->InitInstance();
-	myapp->Run();
-	return myapp;
+	theApp.m_bReady = true;
+	theApp.InitInstance();
+	theApp.Run();
 }
 
 // CMFCindllApp

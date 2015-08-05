@@ -28,7 +28,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 		}
 		else
 		{
-			CMFCindllApp* cmyapp=RunMainframe();
+			RunMainframe();
 		}
 	}
 	else

@@ -12,7 +12,7 @@
 
 // Export MFC application from DLL
 class __declspec( dllexport ) CMFCindllApp;
-extern "C" __declspec( dllexport ) CMFCindllApp* RunMainframe();
+extern "C" __declspec( dllexport ) void RunMainframe();
 class __declspec( dllexport ) CMFCindllDlg;
 
 
