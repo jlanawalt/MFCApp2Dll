@@ -10,6 +10,11 @@
 
 #include "resource.h"		// main symbols
 
+// Export MFC application from DLL
+class __declspec( dllexport ) CMFCindllApp;
+extern "C" __declspec( dllexport ) CMFCindllApp* RunMainframe();
+class __declspec( dllexport ) CMFCindllDlg;
+
 
 // CMFCindllApp:
 // See MFCindll.cpp for the implementation of this class

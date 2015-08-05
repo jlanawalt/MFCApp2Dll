@@ -10,6 +10,15 @@
 #define new DEBUG_NEW
 #endif
 
+// Export MFC application from DLL
+CMFCindllApp* RunMainframe()
+{
+	AFX_MANAGE_STATE(AfxGetStaticModuleState()) ;
+	CMFCindllApp* myapp=new CMFCindllApp();
+	myapp->InitInstance();
+	myapp->Run();
+	return myapp;
+}
 
 // CMFCindllApp
 
