@@ -25,7 +25,6 @@ But if you want to put all the MFC application into a DLL. It's also fine. Pleas
 1. Create a MFC application, for example I create a simple dialog application called MFCindll.
 2. Change the application type as DLL, Right Click your project->Properties->Configuration Properties-> General->Configuration Type as Dynamic Library (.dll)
 3. Export all the classes and a outside call function like this
-
 ```C++
 // in the MFCindll.h
 class __declspec( dllexport ) CMFCindllApp;
@@ -42,7 +41,6 @@ CMFCindllApp* RunMainframe()
 	return myapp;
 }
 ```
-
 4. Create a application to call this DLL, I suggest you to create a console application with MFC support
 5. You can load the DLL in static or dynamic way as you want, or just set project dependencies: Right Click your project->Properties->Common Properties->Framework and References->include your front project into this.
 6. At last, call the outside call function like this.
@@ -98,6 +96,7 @@ I was able to figure the problem out. For those people wanting to
 convert an MFC application to DLL, I am posting this article as my 
 contribution to the newsgroups. 
 To convert an MFC MDI app to DLL, these steps worked for me: 
+
 1. Create an empty DLL project with AppWizard 
 2. Copy your original MFC application over to this project 
 3. Remove Enable3dControls() from InitInstance() 
@@ -109,7 +108,6 @@ of m_pFrameWnd
   if (!m_bReady) return TRUE; 
 8. Create an exported function in your DLL to syncrhonize resources 
 and show the main frame when you want it to: 
-
 ```C++
 void StartFrame() 
 { 
@@ -119,7 +117,6 @@ void StartFrame()
   theApp.Run(); 
 } 
 ```
-
 9. Finally, in your calling EXE create a thread using this function: 
 ```C++
   typedef void (*PROC_START) (void); 
